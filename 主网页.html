@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html>
+	<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>神道国幻想</title>
+    <link rel="stylesheet" href="index.css" />
+	</head>
+	<style type="text/css">
+		ul{
+			list-style: none; 
+		}
+		
+		li{
+			float: left;
+			
+		}
+		a{
+			font-size: 17px;
+			color: #ccc;
+			text-decoration: none; 
+			padding: 22px 16px;
+			opacity:0.8;
+		}
+		.header_bar {
+						background-color: rgba(41, 10, 10, 0.5);
+						display: inline-block;
+						position: absolute;
+						height: 66px;
+						width: 100%;
+						z-index:999;
+			}
+			*{
+				margin: 0;
+				padding: 0;
+			}
+		.header_navbar {
+						float: left;
+						display: inline-block;
+						height: 66px;
+						line-height: 66px;
+						text-indent: 20px;	
+					}
+		.header_left {
+						display: flex; 
+						float:left;
+						width: 100px;
+						
+					}
+		.musicLogo {
+						display: flex;
+						align-items: center;
+						height: 66px;
+						position: relative;
+						left: 0px;
+						top: 90px;
+						z-index: 999;
+						margin-left: 490px;
+					}
+		.Logo {
+						display: inline-block;
+						z-index: 999;
+						margin-left: -120px;
+						
+					}
+		.header_navbar a:hover{
+							text-shadow: 0 0 30px yellow ;	
+						}
+		video {
+					position: fixed;
+							top: 0;
+							left: 0;
+							width: 1600px;
+							height: 744px;
+							z-index: -10;
+							object-fit: cover;
+				}
+	</style>
+	<body>
+		<div class="header_bar">
+			<nav class="header_navbar">
+					<ul>
+							<li><a href="page1.html">个&nbsp;人</a></li>
+							<li><a href="page2.html">新&nbsp;闻</a></li>
+							<li><a href="https://space.bilibili.com/471673366?spm_id_from=333.1007.0.0">神道国幻想</a></li>
+					</ul>
+			</nav>
+			<div class="header_left">
+							<!-- 音乐logo -->
+							<div class="musicLogo">
+								<a href="###">
+									<img src="" style="height: 50px;">
+									
+								</a>
+							</div>
+							<!-- logo -->
+							<div class="Logo">
+								<img src="img/mu.png"/ style="height: 66px;">
+							</div>
+						</div>
+		</div>
+		
+		
+				<div><!-- 背景 -->
+					<video loop="loop" muted="muted" 
+					       autoplay width="1930px" height="1080px">
+						<source src="video/bg1.mp4" type="video/mp4"/>
+					</video>
+					
+				</div>
+			<!-- 音乐播放器 -->
+			<div class="music-content-bg">
+			    <div class="music-content">
+			        <div class="music-box">
+			            <!-- 上部分 -->
+			            <article>
+			                <div class="m-img-box">
+			                    <div class="m-img-content"></div>
+			                </div>
+			                <div class="m-description-content">
+			                    <article>
+			                        <p class="m-title">音乐名</p>
+			                        <p class="m-author">作者</p>
+			                    </article>
+			                    <div class="m-btn-box">
+			                        <button class="m-previous-btn">
+			                            <svg class="icon" aria-hidden="true" style="transform: scale(-1)">
+			                                <use href="#icon-xiayishou"></use>
+			                            </svg>
+			                        </button>
+			                        <button class="m-play-btn">
+			                            <svg class="icon" aria-hidden="true">
+			                                <use href="#icon-bofang"></use>
+			                            </svg>
+			                        </button>
+			                        <button class="m-next-btn">
+			                            <svg class="icon" aria-hidden="true">
+			                                <use href="#icon-xiayishou"></use>
+			                            </svg>
+			                        </button>
+			                    </div>
+			                </div>
+			            </article>
+			            <!-- 下部分 -->
+			            <section>
+			                <span class="m-current-time">00 : 00</span>
+			                <div class="m-progress-bar">
+			                    <div class="m-progress-main">
+			                        <span class="m-progress-btn"></span>
+			                    </div>
+			                    <div class="m-progress-load"></div>
+			                </div>
+			                <span class="m-total-time">00 : 00</span>
+			            </section>
+			        </div>
+			    </div>
+			</div>
+			
+			<script src="iconfont.js"></script>
+			<script src="index.js"></script>
+	</body>
+	
+</html>
