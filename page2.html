@@ -1,12 +1,15 @@
 <!DOCTYPE html>
 <html>
 	<head>
-		<meta charset="utf-8">
-		<title></title>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>神道国幻想</title>
+    <link rel="stylesheet" href="index.css" />
 	</head>
 	<style type="text/css">
 		body{
-				background-image: url("img/bg2.jpg");
+				background-image: url("img/冴月麟.jpg");
 				background-repeat: no-repeat;
 				background-size: cover;
 		}
@@ -64,54 +67,165 @@
 						top: 110px;
 						bottom: 0;
 						left: 0;
-						right: 0;
+						right: 10;
 						margin: 0 auto;
 						height: 400px;
 						width: 1000px;
 						
 					}
 		.news_content {
-						color: white;;
+						color: white;
 						background: rgba(17, 17, 17, 0.3);
+						z-index: 999;
+						font-size: 20px;
+						font-family: "宋体";
+					}
+		/* 导航栏 */
+		li{
+			float: left;
+			
+		}
+		a{
+			font-size: 17px;
+			color: #ccc;
+			text-decoration: none; 
+			padding: 22px 16px;
+			opacity:0.8;
+		}
+		.header_bar {
+						background-color: rgba(41, 10, 10, 0.5);
+						display: inline-block;
+						position: absolute;
+						height: 66px;
+						width: 100%;
+						z-index:999;
+						margin-top: -48.4%;
+			}
+		.header_navbar {
+						float: left;
+						display: inline-block;
+						height: 66px;
+						line-height: 66px;
+						text-indent: 20px;	
+					}
+		.header_left {
+						display: flex; 
+						float:left;
+						width: 100px;
 						
 					}
-
+		.header_navbar a:hover{
+							text-shadow: 0 0 30px yellow ;	
+						}
+		.Logo {
+						display: inline-block;
+						z-index: 999;
+						margin-left: 370px;
+						
+					}
 	</style>
 	<body>
-		<div class="carousel_map">
-			<div class="slide">
-				<div class="news_main">
-							<div class="carousel_map">
-							
-							</div>
-							<div class="news_content">
-				
-								《原神》是由上海米哈游网络科技股份有限公司制作发行的一款开放世界冒险游戏，于2017年1月底立项 [27]，原初测试于2019年6月21日开启
-								[1]，再临测试于2020年3月19日开启，启程测试于2020年6月11日开启 [2]，PC版技术性开放测试于9月15日开启，公测于2020年9月28日开启
-								[3]。在数据方面，同在官方服务器的情况下，iOS、PC、Android平台之间的账号数据互通，玩家可以在同一账号下切换设备。
-							</div>
-						
-
-				<ul class="list">
-					<li class="item">
-						<img src="img/news1.jpg"style="height:100%;width:100%"/>
-					</li>
-					<li class="item">
-						<img src="img/news2.jpg"style="height:100%;width:100%"/>
-					</li>
-					<li class="item">
-						<img src="img/news3.jpg"style="height:100%;width:100%"/>
-					</li>
-					<li class="item">
-						<img src="img/news4.jpg"style="height:100%;width:100%"/>
-					</li>
-					<li class="item">
-						<img src="img/news1.jpg"style="height:100%;width:100%"/>
-					</li>
-				</ul>
+		<!-- 新闻框 -->
+		<div class="news_main">
+			<div class="carousel_map">
+				<div class="slide">
+					<ul class="list">
+						<li class="item">
+							<img src="img/news1.jpg"style="height:100%;width:100%"/>
+						</li>
+						<li class="item">
+							<img src="img/news2.png"style="height:100%;width:100%"/>
+						</li>
+						<li class="item">
+							<img src="img/news3.png"style="height:100%;width:100%"/>
+						</li>
+						<li class="item">
+							<img src="img/news4.png"style="height:100%;width:100%"/>
+						</li>
+						<li class="item">
+							<img src="img/news1.jpg"style="height:100%;width:100%"/>
+						</li>
+					</ul>
 				</div>
 			</div>
+			<div class="news_content">
+				&nbsp;是夜，六人举行了一个异国风情的宴会。最年幼的我因为还不能碰鸦片和酒，正处在极度无聊当中。我悄悄地逃开了那个地方，可是却在黑暗中被不吉利的小丑给捉到了。我，简单而干脆地，被人割下头颅。连第二次感到无聊的机会也没有了。
+				剩下的正直者还有五人。
+			</div>
 		</div>
-		
+		<!-- 新闻框结束 -->
+		<!-- 音乐播放器 -->
+		<div class="music-content-bg">
+		    <div class="music-content">
+		        <div class="music-box">
+		            <!-- 上部分 -->
+		            <article>
+		                <div class="m-img-box">
+		                    <div class="m-img-content"></div>
+		                </div>
+		                <div class="m-description-content">
+		                    <article>
+		                        <p class="m-title">音乐名</p>
+		                        <p class="m-author">作者</p>
+		                    </article>
+		                    <div class="m-btn-box">
+		                        <button class="m-previous-btn">
+		                            <svg class="icon" aria-hidden="true" style="transform: scale(-1)">
+		                                <use href="#icon-xiayishou"></use>
+		                            </svg>
+		                        </button>
+		                        <button class="m-play-btn">
+		                            <svg class="icon" aria-hidden="true">
+		                                <use href="#icon-bofang"></use>
+		                            </svg>
+		                        </button>
+		                        <button class="m-next-btn">
+		                            <svg class="icon" aria-hidden="true">
+		                                <use href="#icon-xiayishou"></use>
+		                            </svg>
+		                        </button>
+		                    </div>
+		                </div>
+		            </article>
+		            <!-- 下部分 -->
+		            <section>
+		                <span class="m-current-time">00 : 00</span>
+		                <div class="m-progress-bar">
+		                    <div class="m-progress-main">
+		                        <span class="m-progress-btn"></span>
+		                    </div>
+		                    <div class="m-progress-load"></div>
+		                </div>
+		                <span class="m-total-time">00 : 00</span>
+		            </section>
+		        </div>
+		    </div>
+		</div>
+		<script src="iconfont.js"></script>
+		<script src="index.js"></script>
+	<!-- 音乐播放器结束 -->
+	<!-- 导航栏 -->
+	<div class="header_bar">
+		<nav class="header_navbar">
+				<ul>
+						<li><a href="page1.html">个&nbsp;人</a></li>
+						<li><a href="page2.html">新&nbsp;闻</a></li>
+						<li><a href="https://space.bilibili.com/471673366?spm_id_from=333.1007.0.0">神道国幻想</a></li>
+				</ul>
+		</nav>
+		<div class="header_left">
+						<!-- 音乐logo -->
+						<div class="musicLogo">
+							<a href="###">
+								<img src="" style="height: 50px;">
+								
+							</a>
+						</div>
+						<!-- logo -->
+						<div class="Logo">
+							<img src="img/mu.png"/ style="height: 66px;">
+						</div>
+					</div>
+	</div>
 	</body>
 </html>
